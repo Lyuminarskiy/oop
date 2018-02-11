@@ -1,3 +1,5 @@
+[Назад к описанию](https://github.com/Vladislav-Lyuminarskiy/OOP-course)
+
 # Лабораторная работа №1
 
 ## Цель работы
