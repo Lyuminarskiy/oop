@@ -3,7 +3,8 @@
 
 using namespace std;
 
-enum Color {
+enum Color
+{
 	Red,
 	Blue,
 	Green
@@ -13,5 +14,5 @@ int main()
 {
 	Color red = Color::Red;
 
-    return 0;
+	return 0;
 }
