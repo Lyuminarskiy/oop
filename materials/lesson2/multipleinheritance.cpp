@@ -1,8 +1,3 @@
-#include "stdafx.h"
-#include <iostream>
-
-using namespace std;
-
 struct Human
 {
     virtual void show() {}

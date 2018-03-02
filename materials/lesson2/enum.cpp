@@ -1,8 +1,3 @@
-#include "stdafx.h"
-#include <iostream>
-
-using namespace std;
-
 enum Color
 {
 	Red,
@@ -13,6 +8,5 @@ enum Color
 int main()
 {
 	Color red = Color::Red;
-
 	return 0;
 }
