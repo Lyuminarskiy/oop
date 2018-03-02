@@ -4,17 +4,17 @@ using namespace std;
 
 struct Person
 {
-    virtual void printName() { cout << "I'm a Person!" << endl; }
+  virtual void printName() { cout << "I'm a Person!" << endl; }
 };
 
 struct Student : public Person
 {
-    void printName() { cout << "I'm a Student!" << endl; }
+  void printName() { cout << "I'm a Student!" << endl; }
 };
 
 struct Worker : public Person
 {
-    void printName() { cout << "I'm a Worker!" << endl; }
+  void printName() { cout << "I'm a Worker!" << endl; }
 };
 
 void showInformation(Person *person) { person->printName(); }
@@ -26,22 +26,22 @@ string add(string left, string right) { return left + right; }
 
 int main()
 {
-    Person *person = new Person();
-    Student *student = new Student();
-    Worker *worker = new Worker();
+  Person *person = new Person();
+  Student *student = new Student();
+  Worker *worker = new Worker();
 
-    showInformation(person);
-    showInformation(student);
-    showInformation(worker);
+  showInformation(person);
+  showInformation(student);
+  showInformation(worker);
 
-    delete person;
-    delete student;
-    delete worker;
+  delete person;
+  delete student;
+  delete worker;
 
-    add(125, 238);
-    add(16.2, 18.3);
-    add('a', 'z');
-    add("Hellow,", " world!");
+  add(125, 238);
+  add(16.2, 18.3);
+  add('a', 'z');
+  add("Hellow,", " world!");
 
-    return 0;
+  return 0;
 }

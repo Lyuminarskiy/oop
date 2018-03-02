@@ -1,28 +1,28 @@
 struct Human
 {
-    virtual void show() {}
+  virtual void show() {}
 };
 
 struct Mom
 {
-    virtual void show() {}
+  virtual void show() {}
 };
 
 struct Dad
 {
-    virtual void show() {}
+  virtual void show() {}
 };
 
 struct Child : public Mom, public Dad
 {
-    Child()
-    {
-        Mom::show();
-        Dad::show();
-    }
+  Child()
+  {
+    Mom::show();
+    Dad::show();
+  }
 };
 
 int main()
 {
-    return 0;
+  return 0;
 }
