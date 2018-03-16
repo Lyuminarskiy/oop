@@ -78,8 +78,3 @@ public:
     this->shirt = shirt;
   }
 };
-
-int main()
-{
-  return 0;
-}

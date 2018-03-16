@@ -21,8 +21,3 @@ struct Child : public Mom, public Dad
     Dad::show();
   }
 };
-
-int main()
-{
-  return 0;
-}
