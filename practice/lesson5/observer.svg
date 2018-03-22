@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN'
+          'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg fill-opacity="0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="rgb(0,0,0)" stroke-linecap="square" width="506" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="0" fill="rgb(0,0,0)" stroke-dasharray="none" font-weight="normal" stroke-width="1" height="406"
+  xmlns="http://www.w3.org/2000/svg" font-family="'Dialog'" font-style="normal" stroke-linejoin="miter" font-size="12px" stroke-dashoffset="0" image-rendering="auto">
+  <defs id="genericDefs" />
+  <g
+  >
+    <defs id="defs1">
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1">
+        <path d="M-7 -7 L211 -7 L211 111 L-7 111 L-7 -7 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath2">
+        <path d="M0 0 L0 70 L200 70 L200 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3">
+        <path d="M0 0 L0 30 L200 30 L200 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath4">
+        <path d="M-7 -7 L211 -7 L211 112 L-7 112 L-7 -7 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath5">
+        <path d="M0 0 L0 15 L200 15 L200 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath6">
+        <path d="M0 0 L0 86 L200 86 L200 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath7">
+        <path d="M0 0 L0 85 L200 85 L200 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath8">
+        <path d="M-7 -7 L31 -7 L31 31 L-7 31 L-7 -7 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath9">
+        <path d="M0 0 L0 20 L20 20 L20 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath10">
+        <path d="M-7 -7 L41 -7 L41 31 L-7 31 L-7 -7 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath11">
+        <path d="M0 0 L0 20 L30 20 L30 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath12">
+        <path d="M0 0 L71 0 L71 119 L0 119 L0 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath13">
+        <path d="M0 0 L0 119 L71 119 L71 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath14">
+        <path d="M0 0 L169 0 L169 71 L0 71 L0 0 Z" />
+      </clipPath
+      >
+      <clipPath clipPathUnits="userSpaceOnUse" id="clipPath15">
+        <path d="M0 0 L0 71 L169 71 L169 0 Z" />
+      </clipPath
+    >
+    </defs
+    >
+    <g text-rendering="geometricPrecision" >
+      <rect x="0" width="506" height="406" y="0" stroke="none" />
+    </g
+    >
+    <g font-size="11px" transform="translate(2,2)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="rgb(122,207,245)" font-weight="bold" stroke-opacity="1">
+      <rect x="0" width="200" height="100" y="0" clip-path="url(#clipPath1)" stroke="none" />
+    </g
+    >
+    <g fill-opacity="1" text-rendering="geometricPrecision" stroke="black" stroke-linecap="butt" transform="translate(2,2)" stroke-miterlimit="0" stroke-opacity="1" fill="black" font-weight="bold" font-family="sans-serif" stroke-linejoin="round" font-size="11px" image-rendering="optimizeQuality">
+      <rect fill="none" x="0" width="200" height="100" y="0" clip-path="url(#clipPath1)" />
+      <line y2="30" fill="none" x1="0" clip-path="url(#clipPath1)" x2="200" y1="30" />
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,2,32)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="14" clip-path="url(#clipPath2)" stroke="none">+addObserver(observer : Observer)</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,2,32)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="29" clip-path="url(#clipPath2)" stroke="none">+removeObserver(observer : Observer)</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,2,32)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="44" clip-path="url(#clipPath2)" stroke="none">+notifyObservers()</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="translate(2,2)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="65" xml:space="preserve" y="12" clip-path="url(#clipPath3)" stroke="none">&lt;&lt;Interface&gt;&gt;</text
+      >
+      <text x="70" xml:space="preserve" y="27" clip-path="url(#clipPath3)" font-weight="bold" stroke="none">Observable</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="translate(302,152)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="rgb(122,207,245)" font-weight="bold" stroke-opacity="1">
+      <rect x="0" width="200" height="100" y="0" clip-path="url(#clipPath1)" stroke="none" />
+    </g
+    >
+    <g fill-opacity="1" text-rendering="geometricPrecision" stroke="black" stroke-linecap="butt" transform="translate(302,152)" stroke-miterlimit="0" stroke-opacity="1" fill="black" font-weight="bold" font-family="sans-serif" stroke-linejoin="round" font-size="11px" image-rendering="optimizeQuality">
+      <rect fill="none" x="0" width="200" height="100" y="0" clip-path="url(#clipPath1)" />
+      <line y2="30" fill="none" x1="0" clip-path="url(#clipPath1)" x2="200" y1="30" />
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,302,182)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="14" clip-path="url(#clipPath2)" stroke="none">+update()</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="translate(302,152)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="65" xml:space="preserve" y="12" clip-path="url(#clipPath3)" stroke="none">&lt;&lt;Interface&gt;&gt;</text
+      >
+      <text x="75" xml:space="preserve" y="27" clip-path="url(#clipPath3)" font-weight="bold" stroke="none">Observer</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="translate(2,152)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="rgb(122,207,245)" font-weight="bold" stroke-opacity="1">
+      <rect x="0" width="200" height="101" y="0" clip-path="url(#clipPath4)" stroke="none" />
+    </g
+    >
+    <g fill-opacity="1" text-rendering="geometricPrecision" stroke="black" stroke-linecap="butt" transform="translate(2,152)" stroke-miterlimit="0" stroke-opacity="1" fill="black" font-weight="bold" font-family="sans-serif" stroke-linejoin="round" font-size="11px" image-rendering="optimizeQuality">
+      <rect fill="none" x="0" width="200" height="101" y="0" clip-path="url(#clipPath4)" />
+      <line y2="15" fill="none" x1="0" clip-path="url(#clipPath4)" x2="200" y1="15" />
+    </g
+    >
+    <g font-size="11px" transform="translate(2,152)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1">
+      <text x="46" xml:space="preserve" y="12" clip-path="url(#clipPath5)" stroke="none">ConcreteObservable</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,2,167)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="14" clip-path="url(#clipPath6)" stroke="none">-observers : Observer[0..*]</text
+    >
+    </g
+    >
+    <g stroke-linecap="butt" font-size="11px" transform="matrix(1,0,0,1,2,167)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke-linejoin="bevel" stroke="black" stroke-opacity="1" stroke-miterlimit="0">
+      <line y2="19" fill="none" x1="0" clip-path="url(#clipPath6)" x2="200" y1="19" />
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,2,167)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="33" clip-path="url(#clipPath6)" stroke="none">+ConcreteObservable()</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,2,167)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="48" clip-path="url(#clipPath6)" stroke="none">+addObserver(observer : Observer)</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,2,167)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="63" clip-path="url(#clipPath6)" stroke="none">+removeObserver(observer : Observer)</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,2,167)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="78" clip-path="url(#clipPath6)" stroke="none">+notifyObservers()</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="translate(302,302)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="rgb(122,207,245)" font-weight="bold" stroke-opacity="1">
+      <rect x="0" width="200" height="100" y="0" clip-path="url(#clipPath1)" stroke="none" />
+    </g
+    >
+    <g fill-opacity="1" text-rendering="geometricPrecision" stroke="black" stroke-linecap="butt" transform="translate(302,302)" stroke-miterlimit="0" stroke-opacity="1" fill="black" font-weight="bold" font-family="sans-serif" stroke-linejoin="round" font-size="11px" image-rendering="optimizeQuality">
+      <rect fill="none" x="0" width="200" height="100" y="0" clip-path="url(#clipPath1)" />
+      <line y2="15" fill="none" x1="0" clip-path="url(#clipPath1)" x2="200" y1="15" />
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,302,317)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="14" clip-path="url(#clipPath7)" stroke="none">+ConcreteObserver()</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="matrix(1,0,0,1,302,317)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="2" xml:space="preserve" y="29" clip-path="url(#clipPath7)" stroke="none">+update()</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="translate(302,302)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" font-weight="bold" stroke-opacity="1">
+      <text x="52" xml:space="preserve" y="12" clip-path="url(#clipPath5)" stroke="none">ConcreteObserver</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="translate(212,172)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="6" xml:space="preserve" y="14" clip-path="url(#clipPath9)" stroke="none">1</text
+    >
+    </g
+    >
+    <g font-size="11px" transform="translate(272,172)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke="black" stroke-opacity="1">
+      <text x="6" xml:space="preserve" y="14" clip-path="url(#clipPath11)" stroke="none">0..*</text
+    >
+    </g
+    >
+    <g fill-opacity="1" text-rendering="geometricPrecision" stroke="black" stroke-linecap="butt" transform="translate(369,219)" stroke-opacity="1" fill="black" stroke-dasharray="5" font-family="sans-serif" stroke-linejoin="round" font-size="11px" stroke-dashoffset="1" image-rendering="optimizeQuality">
+      <line y2="81" fill="none" x1="33" clip-path="url(#clipPath13)" x2="33" y1="33" />
+    </g
+    >
+    <g stroke-linecap="butt" font-size="11px" transform="translate(369,219)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke-linejoin="round" stroke="rgb(122,207,245)" stroke-opacity="1">
+      <polygon points=" 33 33 27 45 39 45" stroke="none" clip-path="url(#clipPath13)" />
+      <polygon fill="none" clip-path="url(#clipPath13)" points=" 33 33 27 45 39 45" stroke="black" />
+    </g
+    >
+    <g stroke-linecap="butt" font-size="11px" transform="translate(170,169)" fill-opacity="1" fill="black" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke-linejoin="round" stroke="black" stroke-opacity="1">
+      <line y2="33" fill="none" x1="57" clip-path="url(#clipPath15)" x2="131" y1="33" />
+      <polygon fill="none" points=" 33 33 45 39 57 33 45 27" clip-path="url(#clipPath15)" />
+    </g
+    >
+    <g fill-opacity="1" text-rendering="geometricPrecision" stroke="black" stroke-linecap="butt" transform="translate(69,70)" stroke-opacity="1" fill="black" stroke-dasharray="5" font-family="sans-serif" stroke-linejoin="round" font-size="11px" stroke-dashoffset="1" image-rendering="optimizeQuality">
+      <line y2="81" fill="none" x1="33" clip-path="url(#clipPath13)" x2="33" y1="33" />
+    </g
+    >
+    <g stroke-linecap="butt" font-size="11px" transform="translate(69,70)" fill-opacity="1" fill="rgb(122,207,245)" text-rendering="geometricPrecision" image-rendering="optimizeQuality" font-family="sans-serif" stroke-linejoin="round" stroke="rgb(122,207,245)" stroke-opacity="1">
+      <polygon points=" 33 33 27 45 39 45" stroke="none" clip-path="url(#clipPath13)" />
+      <polygon fill="none" clip-path="url(#clipPath13)" points=" 33 33 27 45 39 45" stroke="black" />
+    </g
+    >
+  </g
+>
+</svg
+>
