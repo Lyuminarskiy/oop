@@ -4,8 +4,144 @@
 
 ## Темы занятия
 
-- [Шаблон "Наблюдатель"](#Шаблон-Наблюдатель)
 - [Шаблон "Итератор"](#Шаблон-Итератор)
+- [Шаблон "Наблюдатель"](#Шаблон-Наблюдатель)
+
+## Шаблон "Итератор"
+
+Шаблон "итератор" (поведенческий шаблон) предоставляет абстрактный интерфейс для последовательного доступа ко всем элементам составного объекта без раскрытия его внутренней структуры.
+
+Условия применения:
+- Когда необходимо осуществить обход объекта без раскрытия его внутренней структуры.
+- Когда имеется набор составных объектов, и надо обеспечить единый интерфейс для их перебора.
+- Когда необходимо предоставить несколько альтернативных вариантов перебора одного и того же объекта.
+
+Формальная UML-диаграмма шаблона:
+
+![Шаблон "Итератор"](iterator.svg)
+
+Формальное определение шаблона на `C++`:
+
+```c++
+#include <iostream>
+#include <initializer_list>
+
+using namespace std;
+
+template <class T>
+struct Container;
+
+// Абстрактный итератор.
+template <class T>
+struct Iterator
+{
+  virtual T getCurrentItem() = 0;
+  virtual T getFirstItem() = 0;
+  virtual T getNextItem() = 0;
+  virtual bool isDone() = 0;
+};
+
+// Конкретная реализация итератора для обхода объекта типа Container.
+template <class T>
+class ConcreteIterator : public Iterator<T>
+{
+  int current;
+  Container<T> *container;
+
+public:
+  ConcreteIterator(Container<T> *container)
+  {
+    this->container = container;
+  }
+
+  virtual T getCurrentItem()
+  {
+    return container->getItem(current);
+  }
+
+  virtual T getFirstItem()
+  {
+    return container->getItem(0);
+  }
+
+  virtual T getNextItem()
+  {
+    current++;
+    return isDone() ? T() : getCurrentItem();
+  }
+
+  virtual bool isDone()
+  {
+    return current >= container->getSize();
+  }
+};
+
+// Абстрактный контейнер.
+template <class T>
+struct Container
+{
+  virtual Iterator<T> *createIterator() = 0;
+  virtual T getItem(int position) = 0;
+  virtual int getSize() = 0;
+};
+
+// Конкретная реализация контейнера, хранит элементы.
+template <class T>
+class ConcreteContainer : public Container<T>
+{
+  int size;
+  T *items;
+
+public:
+  ConcreteContainer(initializer_list<T> list)
+  {
+    size = list.size();
+    items = new T[size];
+
+    int i = 0;
+    for (T item : list)
+    {
+      items[i] = item;
+      ++i;
+    }
+  }
+
+  ~ConcreteContainer()
+  {
+    delete[] items;
+  }
+
+  virtual Iterator<T> *createIterator()
+  {
+    return new ConcreteIterator<T>(this);
+  }
+
+  virtual T getItem(int position)
+  {
+    return items[position];
+  }
+
+  virtual int getSize()
+  {
+    return size;
+  }
+};
+
+int main()
+{
+  ConcreteContainer<int> container = {1, 2, 3, 4, 5};
+  Iterator<int> *iterator = container.createIterator();
+
+  int item = iterator->getFirstItem();
+  while (!iterator->isDone())
+  {
+    cout << item << endl;
+    item = iterator->getNextItem();
+  }
+
+  return 0;
+}
+```
 
 ## Шаблон "Наблюдатель"
 
@@ -76,23 +212,4 @@ struct ConcreteObserver : public Observer
 {
   virtual void update() {}
 };
-```
-
-## Шаблон "Итератор"
-
-Шаблон "состояние" (поведенческий шаблон) позволяет объекту изменять свое поведение в зависимости от внутреннего состояния. Применение шаблона позволяет вынести поведение, зависящее от текущего состояния объекта, в отдельные классы, и избежать перегруженности методов объекта условными конструкциями. Кроме того, при необходимости мы можем ввести в систему новые классы состояний, а имеющиеся классы состояний использовать в других объектах.
-
-Условия применения:
-- Когда необходимо осуществить обход объекта без раскрытия его внутренней структуры.
-- Когда имеется набор составных объектов, и надо обеспечить единый интерфейс для их перебора.
-- Когда необходимо предоставить несколько альтернативных вариантов перебора одного и того же объекта.
-
-Формальная UML-диаграмма шаблона:
-
-![Шаблон "Итератор"](iterator.svg)
-
-Формальное определение шаблона на `C++`:
-
-```c++
-
 ```
