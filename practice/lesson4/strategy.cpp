@@ -19,9 +19,9 @@ struct ConcreteStrategy2 : public Strategy
 // Хранит указатель на объект стратегии (агрегация).
 struct Context
 {
-  Strategy* contextStrategy;
+  Strategy *contextStrategy;
 
-  Context(Strategy* strategy)
+  Context(Strategy *strategy)
   {
     contextStrategy = strategy;
   }

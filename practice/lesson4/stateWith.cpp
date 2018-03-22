@@ -4,19 +4,19 @@ using namespace std;
 
 struct WaterState
 {
-  virtual void heat(Water* water) = 0;
-  virtual void frost(Water* water) = 0;
+  virtual void heat(Water *water) = 0;
+  virtual void frost(Water *water) = 0;
 };
 
 struct SolidWaterState : public WaterState
 {
-  virtual void heat(Water* water)
+  virtual void heat(Water *water)
   {
     cout << "Превращаем лед в жидкость" << endl;
     water->state = new LiquidWaterState();
   }
 
-  virtual void frost(Water* water)
+  virtual void frost(Water *water)
   {
     cout << "Продолжаем заморозку льда" << endl;
   }
@@ -24,12 +24,12 @@ struct SolidWaterState : public WaterState
 
 struct LiquidWaterState : public WaterState
 {
-  virtual void heat(Water* water)
+  virtual void heat(Water *water)
   {
     cout << "Превращаем жидкость в пар" << endl;
     water->state = new GasWaterState();
   }
-  virtual void frost(Water* water)
+  virtual void frost(Water *water)
   {
     cout << "Превращаем жидкость в лед" << endl;
     water->state = new SolidWaterState();
@@ -38,12 +38,12 @@ struct LiquidWaterState : public WaterState
 
 struct GasWaterState : public WaterState
 {
-  virtual void heat(Water* water)
+  virtual void heat(Water *water)
   {
     cout << "Повышаем температуру водяного пара" << endl;
   }
 
-  virtual void frost(Water* water)
+  virtual void frost(Water *water)
   {
     cout << "Превращаем водяной пар в жидкость" << endl;
     water->state = new LiquidWaterState();
@@ -52,9 +52,9 @@ struct GasWaterState : public WaterState
 
 struct Water
 {
-  WaterState* state;
-  
-  Water(WaterState* state)
+  WaterState *state;
+
+  Water(WaterState *state)
   {
     this->state = state;
   }

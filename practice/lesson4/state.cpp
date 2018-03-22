@@ -1,11 +1,11 @@
 struct State
 {
-  virtual void handle(Context* context) = 0;
+  virtual void handle(Context *context) = 0;
 };
 
 struct StateA : public State
 {
-  virtual void handle(Context* context)
+  virtual void handle(Context *context)
   {
     context->state = new StateB();
   }
@@ -13,7 +13,7 @@ struct StateA : public State
 
 struct StateB : public State
 {
-  virtual void handle(Context* context)
+  virtual void handle(Context *context)
   {
     context->state = new StateA();
   }
@@ -23,13 +23,13 @@ struct StateB : public State
 // изменяться в соответствии с состоянием.
 struct Context
 {
-  State* state;
-  
-  Context(State* state)
+  State *state;
+
+  Context(State *state)
   {
     this->state = state;
   }
-    
+
   void request()
   {
     this->state->handle(this);

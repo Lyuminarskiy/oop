@@ -12,7 +12,7 @@ enum WaterState
 struct Water
 {
   WaterState waterState;
-  
+
   Water(WaterState waterState)
   {
     this->waterState = waterState;
@@ -20,7 +20,7 @@ struct Water
 
   void heat()
   {
-    switch(waterState)
+    switch (waterState)
     {
     case WaterState::SOLID:
       cout << "Превращаем лед в жидкость" << endl;
@@ -39,7 +39,7 @@ struct Water
   }
   void frost()
   {
-    switch(waterState)
+    switch (waterState)
     {
     case WaterState::SOLID:
       cout << "Продолжаем заморозку льда" << endl;

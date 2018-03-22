@@ -22,9 +22,9 @@
 
 Список практических занятий:
 
-- Практическое занятие №1
-- [Практическое занятие №2](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson2)
-- [Практическое занятие №3](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson3)
+- [Практическое занятие №1](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson1/README.md)
+- [Практическое занятие №2](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson2/README.md)
+- [Практическое занятие №3](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson3/README.md)
 - [Практическое занятие №4](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson4/README.md)
 - [Практическое занятие №5](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson5/README.md)
 
