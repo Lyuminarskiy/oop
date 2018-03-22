@@ -46,7 +46,7 @@
     >
     </defs
     >
-    <g fill="white" text-rendering="geometricPrecision" fill-opacity="1" stroke-opacity="1" stroke="white">
+    <g fill="white" text-rendering="geometricPrecision" fill-opacity="1" stroke-opacity="0" stroke="white">
       <rect x="0" width="356" height="406" y="0" stroke="none" />
     </g
     >
