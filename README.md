@@ -22,18 +22,18 @@
 
 Список практических занятий:
 
-- [Практическое занятие №1](practice/lesson1/README.md)
-- [Практическое занятие №2](practice/lesson2/README.md)
-- [Практическое занятие №3](practice/lesson3/README.md)
-- [Практическое занятие №4](practice/lesson4/README.md)
-- [Практическое занятие №5](practice/lesson5/README.md)
-- [Практическое занятие №6](practice/lesson6/README.md)
+1. [ООП в С++. Принципы ООП](practice/lesson1/README.md)
+2. [ООП в С++. UML: диаграммы классов](practice/lesson2/README.md)
+3. [ООП в С++. UML: виды взаимосвязей](practice/lesson3/README.md)
+4. [Шаблоны проектирования. Поведенческие шаблоны: "Стратегия" и "Состояние"](practice/lesson4/README.md)
+5. [Поведенческие шаблоны: "Итератор" и "Наблюдатель"](practice/lesson5/README.md)
+6. [Структурные шаблоны: "Фасад" и "Декоратор"](practice/lesson6/README.md)
 
 
 ## Лабораторные работы
 
 Список лабораторных работ:
 
-- [Лабораторная работа №1](labs/lab1.md)
-- [Лабораторная работа №2](labs/lab2.md)
-- [Лабораторная работа №3](labs/lab3.md)
+1. [Инкапсуляция](labs/lab1.md)
+2. [Наследование и полиморфизм](labs/lab2.md)
+3. [Шаблоны и исключительные ситуации](labs/lab3.md)

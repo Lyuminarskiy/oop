@@ -1,6 +1,6 @@
-[Назад к описанию](https://github.com/Vladislav-Lyuminarskiy/OOP-course)
+[Инкапсуляция](../../README.md)
 
-# Лабораторная работа №1
+# ООП:
 
 ## Цель работы
 
