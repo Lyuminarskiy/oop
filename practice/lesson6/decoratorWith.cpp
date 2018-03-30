@@ -55,7 +55,7 @@ struct TomatoPizza : public PizzaDecorator
     }
 };
 
-struct CheesePizza final : public PizzaDecorator
+struct CheesePizza : public PizzaDecorator
 {
     CheesePizza(Pizza* pizza) :
         PizzaDecorator(pizza->getName() + " с сыром", pizza) {}
