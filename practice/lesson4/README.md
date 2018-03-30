@@ -1,4 +1,4 @@
-[Назад к описанию](https://github.com/Vladislav-Lyuminarskiy/OOP-course)
+[Назад к описанию](../../README.md)
 
 # Практическое занятие №4
 

@@ -22,17 +22,18 @@
 
 Список практических занятий:
 
-- [Практическое занятие №1](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson1/README.md)
-- [Практическое занятие №2](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson2/README.md)
-- [Практическое занятие №3](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson3/README.md)
-- [Практическое занятие №4](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson4/README.md)
-- [Практическое занятие №5](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/practice/lesson5/README.md)
+- [Практическое занятие №1](practice/lesson1/README.md)
+- [Практическое занятие №2](practice/lesson2/README.md)
+- [Практическое занятие №3](practice/lesson3/README.md)
+- [Практическое занятие №4](practice/lesson4/README.md)
+- [Практическое занятие №5](practice/lesson5/README.md)
+- [Практическое занятие №6](practice/lesson6/README.md)
 
 
 ## Лабораторные работы
 
 Список лабораторных работ:
 
-- [Лабораторная работа №1](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/labs/lab1.md)
-- [Лабораторная работа №2](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/labs/lab2.md)
-- [Лабораторная работа №3](https://github.com/Vladislav-Lyuminarskiy/OOP-course/blob/master/labs/lab3.md)
+- [Лабораторная работа №1](labs/lab1.md)
+- [Лабораторная работа №2](labs/lab2.md)
+- [Лабораторная работа №3](labs/lab3.md)
