@@ -21,13 +21,13 @@ class MysqlAdapter : public SqlAdapter
   MysqlApi mysqlApi;
 
 public:
-  virtual void connect() {};
-  virtual void disconnect() {};
+  virtual void connect() override {};
+  virtual void disconnect() override {};
 
-  virtual void create(int id) {};
-  virtual void read(int id) {};
-  virtual void update(int id) {};
-  virtual void del(int id) {};
+  virtual void create(int id) override {};
+  virtual void read(int id) override {};
+  virtual void update(int id) override {};
+  virtual void del(int id) override {};
 };
 
 // Адаптер для PostgreSQL API.
@@ -36,28 +36,28 @@ class PostgresqlAdapter : public SqlAdapter
   PostgresqlApi postgresqlApi;
 
 public:
-  virtual void connect() {};
-  virtual void disconnect() {};
+  virtual void connect() override {};
+  virtual void disconnect() override {};
 
-  virtual void create(int id) {};
-  virtual void read(int id) {};
-  virtual void update(int id) {};
-  virtual void del(int id) {};
+  virtual void create(int id) override {};
+  virtual void read(int id) override {};
+  virtual void update(int id) override {};
+  virtual void del(int id) override {};
 };
 
 // Адаптер для SQLite API.
-class PostgresqlAdapter : public SqlAdapter
+class SqliteAdapter : public SqlAdapter
 {
   SqliteApi sqliteApi;
 
 public:
-  virtual void connect() {};
-  virtual void disconnect() {};
+  virtual void connect() override {};
+  virtual void disconnect() override {};
 
-  virtual void create(int id) {};
-  virtual void read(int id) {};
-  virtual void update(int id) {};
-  virtual void del(int id) {};
+  virtual void create(int id) override {};
+  virtual void read(int id) override {};
+  virtual void update(int id) override {};
+  virtual void del(int id) override {};
 };
 
 void main()
