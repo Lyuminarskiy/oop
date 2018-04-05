@@ -29,7 +29,7 @@ class Facade
 public:
     Facade(ComponentA *componentA,
            ComponentB *componentB,
-           ComponentC *componentC) : 
+           ComponentC *componentC) :
              componentA(componentA),
              componentB(componentB),
              componentC(componentC) {}
@@ -50,9 +50,11 @@ public:
     }
 };
 
-void main()
+int main()
 {
     Facade facade(new ComponentA(), new ComponentB(), new ComponentC());
     facade.operation1();
     facade.operation2();
+
+    return 0;
 }

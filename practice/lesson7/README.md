@@ -87,8 +87,8 @@ using namespace std;
 struct Component
 {
   virtual void operation() = 0;
-  virtual void add(const Component& component) {};
-  virtual void remove(const Component& component) {};
+  virtual void add(Component*) {};
+  virtual void remove(Component*) {};
 };
 
 // Отдельный компонент, не может содержать другие компоненты.
@@ -100,18 +100,18 @@ struct Leaf : public Component
 // Компонент, который может содержать другие компоненты.
 class Composite : public Component
 {
-  // Список вложенных компонент.
-  list<Component> components;
+  // Список вложенных компонентов.
+  list<Component*> components;
 
 public:
   virtual void operation() override {};
 
-  virtual void add(const Component& component)
+  virtual void add(Component* component) override
   {
     components.push_back(component);
   };
 
-  virtual void remove(const Component& component)
+  virtual void remove(Component* component) override
   {
     components.remove(component);
   };
@@ -127,7 +127,7 @@ void main()
   sub2.operation();
   root.operation();
 
-  root.add(sub1);
-  root.add(sub2);
+  root.add(&sub1);
+  root.add(&sub2);
 }
 ```
