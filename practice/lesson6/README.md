@@ -2,7 +2,7 @@
 
 # Структурные шаблоны: "Фасад" и "Декоратор"
 
-Темы занятия:
+Содержание:
 - [Шаблон "Фасад"](#Шаблон-Фасад)
 - [Шаблон "Декоратор"](#Шаблон-Декоратор)
 
@@ -53,7 +53,7 @@ class Facade
 public:
     Facade(ComponentA *componentA,
            ComponentB *componentB,
-           ComponentC *componentC) : 
+           ComponentC *componentC) :
              componentA(componentA),
              componentB(componentB),
              componentC(componentC) {}
