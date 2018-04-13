@@ -35,12 +35,12 @@ struct Square : public Rectangle
   }
 };
 
-void calculateRectangleSquare(Rectangle* rectangle, double width, double height)
+void calculateRectangleSquare(Rectangle *rectangle, double width, double height)
 {
-	rectangle->setWidth(width);
-	rectangle->setHeight(height);
+  rectangle->setWidth(width);
+  rectangle->setHeight(height);
 
-	return rectangle->getHeight * rectangle->getWidth;
+  return rectangle->getHeight * rectangle->getWidth;
 }
 
 int main()
