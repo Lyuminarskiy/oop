@@ -2,7 +2,7 @@
 
 using namespase std;
 
-// Книга.addItem
+// Книга
 class Book
 {
   string text;
