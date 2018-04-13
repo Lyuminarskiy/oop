@@ -1,6 +1,6 @@
 #include <string>
 
-using namespase std;
+using namespace std;
 
 // Книга.
 class Book
@@ -20,7 +20,7 @@ public:
   {
     this->printer = printer;
   }
-  
+
   void print()
   {
     printer->print(text);
@@ -30,17 +30,17 @@ public:
 // Абстракция.
 struct Printer
 {
-  virtual void print(char *text) = 0;
+  virtual void print(string text) = 0;
 };
 
 // Вывод содержимого книги в консоли.
 struct ConsolePrinter :  public Printer
 {
-  void print(char *text) override {}
+  void print(string text) override {}
 };
 
 // Вывод содержимого книги в браузере.
 struct HtmlPrinter :  public Printer
 {
-  void print(char *text) override {}
+  void print(string text) override {}
 }

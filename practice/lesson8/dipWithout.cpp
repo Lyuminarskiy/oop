@@ -1,6 +1,6 @@
 #include <string>
 
-using namespase std;
+using namespace std;
 
 // Книга
 class Book
@@ -18,12 +18,12 @@ public:
 
   void print()
   {
-    printer->print(text);
+    printer.print(text);
   }
 };
 
 // Вывод содержимого книги в консоли.
 struct ConsolePrinter
 {
-  void print(char *text) {}
+  void print(string text) {}
 }
