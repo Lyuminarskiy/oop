@@ -1,5 +1,9 @@
-# VS Code
+node_modules
+**/dist
+
 .vscode
 
-# Visual Paradigm
-*.vpp.*
+.idea/**
+!.idea/OOP-course.iml
+!.idea/modules.xml
+!.idea/vcs.xml
