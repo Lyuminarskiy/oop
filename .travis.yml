@@ -1,0 +1,26 @@
+language: node_js
+node_js: node
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+jobs:
+  include:
+    - stage: Deploy
+      install:
+        - npm install --save-dev vuepress
+      script:
+        - npm run docs:build
+      after_success:
+        - mv README.md LICENSE docs/.vuepress/dist --verbose
+      deploy:
+        skip-cleanup: true
+        provider: pages
+        github-token: $GITHUB_TOKEN
+        repo: OOP-course/oop-course.github.io
+        target-branch: master
+        local-dir: docs/.vuepress/dist
+        on:
+          branch: master
