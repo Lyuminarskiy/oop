@@ -65,6 +65,17 @@ Studying proccess:
 
 `C++` tutorials:
 
+- [Basic Concepts of Object Oriented Programming using C++
+](https://www.geeksforgeeks.org/basic-concepts-of-object-oriented-programming-using-c).
+- [Welcome to object-oriented programming
+](https://www.learncpp.com/cpp-tutorial/81-welcome-to-object-oriented-programming).
+- [C++ Programming: Code patterns design
+](https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns).
+- [Design Patterns (C++): Introduction
+](https://www.bogotobogo.com/DesignPatterns/introduction.php).
+- [C++ Design Patterns
+](https://cpp-design-patterns.readthedocs.io/en/latest/index.html).
+
 ## Feedback
 
 For all questions arising during the course, you can get an answer by sending
