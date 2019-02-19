@@ -54,6 +54,15 @@ Studying proccess:
 
 `Java` tutorials:
 
+- [OOPs concepts in Java
+](https://beginnersbook.com/2013/04/oops-concepts).
+- [Object and Classes
+](https://www.studytonight.com/java/object-and-classes.php).
+- [Design Patterns in Java
+](https://www.javatpoint.com/design-patterns-in-java).
+- [Java Design Patterns
+](https://www.journaldev.com/1827/java-design-patterns-example-tutorial).
+
 `C++` tutorials:
 
 ## Feedback
@@ -64,7 +73,7 @@ an email <a href='mailto:Vladislav.Lyuminarskiy@gmail.com
 target='_blank'>Vladislav.Lyuminarskiy@gmail.com</a>.
 In the subject line indicate the name of the course and initials, for example:
 
-`OOP, group Б04-191-1, John Smith`
+`OOP, group Б04-191-11, John Smith`
 
 ::: danger Error!
 The answer is sent only for letters with the **correct letter subject**.
