@@ -37,51 +37,100 @@ module.exports = {
     "/": {
       lang: "ru-RU",
       title: "ООП",
-      description: "Учебные материалы по курсу \"Объектно-ориентированное программирование\""
+      description: "Учебные материалы по курсу " +
+                   "\"Объектно-ориентированное программирование\""
+    },
+    "/en/": {
+      lang: "en-US",
+      title: "OOP",
+      description: "Educational materials for course " +
+                   "\"Object-oriented programming\""
     }
   },
   themeConfig: {
-    nav: [
-      {
-        text: "О курсе",
-        link: "/about/"
+    locales: {
+      "/": {
+        selectText: "Выбор языка",
+        label: "Русский",
+        nav: [
+          {
+            text: "О курсе",
+            link: "/about/"
+          },
+          {
+            text: "Практика",
+            link: "/practice/"
+          },
+          {
+            text: "Лабораторные",
+            link: "/labs/"
+          }
+        ],
+        sidebar: {
+          "/practice/": [
+            "01/"
+          ],
+          "/labs/": [
+            "01/"
+          ]
+        },
+        lastUpdated: "Последнее обновление",
+        repo: "OOP-course/OOP-course",
+        docsDir: "docs",
+        editLinks: true,
+        editLinkText: "Редактировать эту страницу",
+        serviceWorker: {
+          updatePopup: {
+            message: "Доступно новое содержимое.",
+            buttonText: "Обновить"
+          }
+        }
       },
-      {
-        text: "Практика",
-        link: "/practice/"
-      },
-      {
-        text: "Лабораторные",
-        link: "/labs/"
+      "/en/": {
+        selectText: "Languages",
+        label: "English",
+        nav: [
+          {
+            text: "About",
+            link: "/en/about/"
+          },
+          {
+            text: "Practice",
+            link: "/en/practice/"
+          },
+          {
+            text: "Labs",
+            link: "/en/labs/"
+          }
+        ],
+        sidebar: {
+          "/en/practice/": [
+            "01/"
+          ],
+          "/en/labs/": [
+            "01/"
+          ]
+        },
+        lastUpdated: "Last updated",
+        docsDir: "docs/en",
+        editLinks: true,
+        editLinkText: "Edit this page",
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
+        }
       }
-    ],
-    sidebar: {
-      "/practice/": [
-        "01/"
-      ],
-      "/labs/": [
-        "01/"
-      ]
     },
-    lastUpdated: "Последнее обновление",
     repo: "OOP-course/OOP-course",
-    docsDir: "docs",
-    editLinks: true,
-    editLinkText: "Редактировать эту страницу",
-    serviceWorker: {
-      updatePopup: {
-        message: "Доступно новое содержимое.",
-        buttonText: "Обновить"
-      }
-    },
     algolia: {
       apiKey: "892ad28dc056e1eb225c126678ef1c09",
       indexName: "c_vladislav",
       algoliaOptions: {
         facetFilters: ["tags:oop"]
       }
-    }
-  },
-  serviceWorker: true,
-  evergreen: true
+    },
+    evergreen: true
+  }
 };
