@@ -42,6 +42,14 @@ Studying proccess:
 
 `C#` tutorials:
 
+- [Object-Oriented Programming (C#)
+](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/object-oriented-programming).
+- [C# Object-Oriented Programming
+](http://www.blackwasp.co.uk/csharpobjectoriented.aspx).
+- [Object Oriented Programming Using C# .NET
+](https://www.c-sharpcorner.com/UploadFile/84c85b/object-oriented-programming-using-C-Sharp-net).
+- [C# object-oriented programming
+](http://zetcode.com/lang/csharp/oopi).
 - [.NET Design Patterns](https://www.dofactory.com/net/design-patterns).
 
 `Java` tutorials:
