@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = {
   head: [
     [
@@ -50,8 +48,18 @@ module.exports = {
   themeConfig: {
     locales: {
       "/": {
+        docsDir: "docs",
         selectText: "Выбор языка",
         label: "Русский",
+        lastUpdated: "Последнее обновление",
+        editLinks: true,
+        editLinkText: "Редактировать эту страницу",
+        serviceWorker: {
+          updatePopup: {
+            message: "Доступно новое содержимое.",
+            buttonText: "Обновить"
+          }
+        },
         nav: [
           {
             text: "О курсе",
@@ -73,22 +81,21 @@ module.exports = {
           "/labs/": [
             "01/"
           ]
-        },
-        lastUpdated: "Последнее обновление",
-        repo: "OOP-course/OOP-course",
-        docsDir: "docs",
-        editLinks: true,
-        editLinkText: "Редактировать эту страницу",
-        serviceWorker: {
-          updatePopup: {
-            message: "Доступно новое содержимое.",
-            buttonText: "Обновить"
-          }
         }
       },
       "/en/": {
+        docsDir: "docs/en",
         selectText: "Languages",
         label: "English",
+        lastUpdated: "Last updated",
+        editLinks: true,
+        editLinkText: "Edit this page",
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
+        },
         nav: [
           {
             text: "About",
@@ -110,16 +117,6 @@ module.exports = {
           "/en/labs/": [
             "01/"
           ]
-        },
-        lastUpdated: "Last updated",
-        docsDir: "docs/en",
-        editLinks: true,
-        editLinkText: "Edit this page",
-        serviceWorker: {
-          updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          }
         }
       }
     },
