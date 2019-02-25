@@ -1,4 +1,5 @@
 module.exports = {
+  evergreen: true,
   head: [
     ["meta", {
       name: "author",
@@ -24,18 +25,21 @@ module.exports = {
   locales: {
     "/": {
       lang: "ru-RU",
-      title: "ООП",
+      title: "Объектно-ориентированное программирование",
       description: "Учебные материалы по курсу " +
-                   "\"Объектно-ориентированное программирование\""
+                   "\"Объектно-ориентированное программирование\"."
     },
     "/en/": {
       lang: "en-US",
-      title: "OOP",
+      title: "Object-oriented programming",
       description: "Educational materials for course " +
-                   "\"Object-oriented programming\""
+                   "\"Object-oriented programming\"."
     }
   },
   themeConfig: {
+    repo: "OOP-course/OOP-course",
+    editLinks: true,
+    logo: "/icons/icon512.png",
     locales: {
       "/": {
         docsDir: "docs",
@@ -127,9 +131,6 @@ module.exports = {
           ]
         }
       }
-    },
-    repo: "OOP-course/OOP-course",
-    editLinks: true,
-    evergreen: true
+    }
   }
 };
