@@ -1,35 +1,25 @@
 module.exports = {
   head: [
-    [
-      "meta", {
+    ["meta", {
       name: "author",
       content: "Владислав Люминарский"
-    }
-    ],
-    [
-      "meta", {
+    }],
+    ["meta", {
       name: "theme-color",
       content: "#3eaf7c"
-    }
-    ],
-    [
-      "link", {
+    }],
+    ["link", {
       rel: "icon",
       href: "/icons/icon512.png"
-    }
-    ],
-    [
-      "link", {
+    }],
+    ["link", {
       rel: "manifest",
       href: "/manifest.webmanifest"
-    }
-    ],
-    [
-      "link", {
+    }],
+    ["link", {
       rel: "license",
       href: "/LICENSE"
-    }
-    ]
+    }]
   ],
   locales: {
     "/": {
@@ -52,12 +42,21 @@ module.exports = {
         selectText: "Выбор языка",
         label: "Русский",
         lastUpdated: "Последнее обновление",
-        editLinks: true,
         editLinkText: "Редактировать эту страницу",
         serviceWorker: {
           updatePopup: {
             message: "Доступно новое содержимое.",
             buttonText: "Обновить"
+          }
+        },
+        algolia: {
+          apiKey: "892ad28dc056e1eb225c126678ef1c09",
+          indexName: "c_vladislav",
+          algoliaOptions: {
+            facetFilters: [
+              "lang:ru-RU",
+              "tags:oop-course"
+            ]
           }
         },
         nav: [
@@ -88,12 +87,21 @@ module.exports = {
         selectText: "Languages",
         label: "English",
         lastUpdated: "Last updated",
-        editLinks: true,
         editLinkText: "Edit this page",
         serviceWorker: {
           updatePopup: {
             message: "New content is available.",
             buttonText: "Refresh"
+          }
+        },
+        algolia: {
+          apiKey: "892ad28dc056e1eb225c126678ef1c09",
+          indexName: "c_vladislav",
+          algoliaOptions: {
+            facetFilters: [
+              "lang:en-US",
+              "tags:oop-course"
+            ]
           }
         },
         nav: [
@@ -121,13 +129,7 @@ module.exports = {
       }
     },
     repo: "OOP-course/OOP-course",
-    algolia: {
-      apiKey: "892ad28dc056e1eb225c126678ef1c09",
-      indexName: "c_vladislav",
-      algoliaOptions: {
-        facetFilters: ["tags:oop"]
-      }
-    },
+    editLinks: true,
     evergreen: true
   }
 };
