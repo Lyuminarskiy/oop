@@ -79,7 +79,8 @@ module.exports = {
         ],
         sidebar: {
           "/practice/": [
-            "01/"
+            "01/",
+            "02/"
           ],
           "/labs/": [
             "01/"
@@ -124,7 +125,8 @@ module.exports = {
         ],
         sidebar: {
           "/en/practice/": [
-            "01/"
+            "01/",
+            "02/"
           ],
           "/en/labs/": [
             "01/"
