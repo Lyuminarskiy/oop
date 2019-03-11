@@ -79,11 +79,34 @@ module.exports = {
         ],
         sidebar: {
           "/practice/": [
-            "01/",
-            "02/"
+            "",
+            {
+              title: "Основы ООП",
+              collapsable: false,
+              children: [
+                "01/",
+                "02/",
+                "03/"
+              ]
+            },
+            {
+              title: "Основы проектирования ПО",
+              collapsable: false,
+              children: [
+                "04/"
+              ]
+            }
           ],
           "/labs/": [
-            "01/"
+            "",
+            {
+              title: "Лабораторные работы",
+              collapsable: false,
+              children: [
+                "01/",
+                "02/"
+              ]
+            }
           ]
         }
       },
@@ -125,8 +148,7 @@ module.exports = {
         ],
         sidebar: {
           "/en/practice/": [
-            "01/",
-            "02/"
+            "01/"
           ],
           "/en/labs/": [
             "01/"
