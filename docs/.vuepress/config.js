@@ -1,5 +1,6 @@
 module.exports = {
   evergreen: true,
+  serviceWorker: true,
   head: [
     ["meta", {
       name: "author",
