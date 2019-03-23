@@ -1,15 +1,16 @@
-# 1. Basic concepts of OOP. Encapsulation. Classes, fields and methods
+# 1. Basic Concepts of OOP. Encapsulation. Classes, Fields and Methods
 
-## Topics
+## Lesson's topics
 
 - Basic concepts of OOP.
 - Encapsulation.
 - Classes, fields and methods.
-- `public` and` private` access modifiers, nested types.
-- Objects creation and constructors.
+- `public` and` private` access modifiers.
+- Constructors and Objects creation.
 - Static class members and constants.
+- Nested types.
 
-## Theoretical information
+## Theoretical Information
 
 Basic concepts of OOP:
 
@@ -24,130 +25,233 @@ new fields and replace (override) the methods of the parent or supplement them.
 Stimulates code reuse and gives code flexibility.
 
 3. _Polymorphism_ - a property of objects that have the same parent to solve
-problems that are similar in meaning in different ways. Descendants receive 
+problems that are similar in meaning in different ways. Children receive 
 specific properties missing from the parent when the algorithm of a 
 particular method changes.
 
-Class member access modifiers:
+Class members' access modifiers:
 
-1. `public` defines _open_ members of a class that do not have access 
+1. `public` - defines _open_ members of a class that do not have access 
 restrictions, can be accessed from both the object and from any derived class.
 
-2. `private` defines _closed_ class members that are available only in the 
+2. `private` - defines _closed_ class members that are available only in the 
 class in which they are defined.
 
-## 1.1. Point
+## 1.1. The Point Type
 
-Create the point type `Point`, which has fields that store its coordinates 
-as floating-point numbers:
+Tasks:
 
-- `x` - abscissa,
-- `y` - ordinate.
+1. Create the point type `Point`.
+2. Define access modifiers for class members.
+3. Demonstrate how to work with a point type.
 
-The coordinates of the point should be read-only and set in the constructor.
+### Fields
 
-Add constructors that accept following input:
+Create the following fields:
 
-- ... two floating point numbers.
-- ... another point to copy its coordinates.
+Name | Type | Access | Description
+:---:|:----:|:------:| -----------
+`x` | `float` | `Read` | The point's abscissa.
+`y` | `float` | `Read` | The point's ordinate.
+`format` | `const` `string` | - | A template for representing the point as a string.
 
-Add methods that return:
+### Constructors
 
-- A string with information about the coordinates of a point like `(x; y)`.
-Arrange the string pattern as a constant field.
-- The result of comparing two points (boolean value).
-- A copy of the point.
+Create the following constructors:
 
-Duplicate the method of comparing two points as a static method.
-The use of overload operations is allowed.
+Signature | Description
+--------- | -----------
+`Point(float x, float y)` | Creates a point with the coordinates `x` and `y`.
+`Point(Point)` | Creates a point by copying data from another point.
 
-Demonstrate how to work with a point type.
+### Methods
 
-## 1.2. Vector
+Create the following methods:
 
-Create a vector type `Vector` with the following fields:
+Signature | Return type | Description
+--------- |:-----------:| -----------
+`copy()` | `Point` | Returns a copy of the point.
+`equals(Point)` | `bool` | Returns the result of comparing the point with another point.
+`static` `equals(Point first, Point second)` | `bool` | Returns the result of comparing the point `start` with the point `second`.
+`toString()` | `string` | Returns a string* with the information about the coordinates of the point**.
 
-- `start` - vector start point.
-- `end` - the end point of the vector.
+Remarks:
 
-Use the point type `Point` created in the previous task.
+_* Example of a string:_
 
-Vector coordinates must be read-only and set in the constructor.
+```
+(2.35; 4.26)
+```
 
-Add the following constructors:
+_** Round the coordinates up to two digits after the point._
 
-- Without arguments (creates a zero vector).
-- Takes one point at the input (creates a radius vector).
-- Takes two points at the entrance.
-- Another vector to copy the start and end points.
+::: warning Notice!
+If the class has many constructors, if it's possible,
+**chain them** together.
+:::
 
-Add methods that return:
+::: warning Notice!
+If it's possible, use [operator overloading
+](https://en.wikipedia.org/wiki/Operator_overloading)
+and override standard methods.
+:::
 
-- A string with information about the vector coordinates of the form
-`[(x1; y1), (x2; y2)]`. Arrange the string pattern as a constant field.
-- The result of comparing two vectors (Boolean value).
-- A copy of the vector.
-- Vector module.
-- The sum of two vectors.
-- The difference of two vectors.
-- The result of the scalar product of two vectors.
-- The result of multiplying a vector by a number.
+::: warning Notice!
+If a class contains fields that are read-only or write-only,
+it is recommended to make such fields _private_ or _protected_
+and implement appropriate **access methods**.
+:::
 
-Binary operations methods duplicate as static methods.
-The use of overload operations is allowed.
+## 1.2. The Vector Type
 
-Demonstrate how to work with a vector type.
+Tasks:
 
-## 1.3. Human
+1. Create the vector type `Vector`.
+2. Define access modifiers for class members.
+3. Demonstrate how to work with a vector type.
 
-Create a human type `Human` with the following fields:
+### Fields
 
-- `name` - first name.
-- `surname` - last name.
-- `gender` - gender.
-- `age` - age, year.
-- `height` - height, centimeters.
-- `weight` - weight, kilograms.
+Create the following fields:
 
-All fields must be private and readable and writable using class methods.
+Name | Type* | Access | Description
+:---:|:-----:|:------:| -----------
+`start` | `Point` | `Read` | The vector's start point.
+`end` | `Point` | `Read` | The vector's end point.
+`format` | `const` `string` | - | A template for representing the vector as a string.
 
-The `name` and` surname` fields are strings, `age` is integer,` height` and 
-`weight` store floating-point numbers.
+Remarks:
 
-The field `gender` must be represented by a separate type of` Gender`, 
-nested in the human type `Human`. The type must define two constant values:
+_* Use the point type `Point` created in the previous task._
 
-- `MALE` - man.
-- `FEMALE` - woman.
+### Constructors
 
-When implementing the type `Gender` it is allowed to use enumerated types.
+Create the following constructors:
 
-Add constructors that accept following input:
+Signature | Description
+--------- | -----------
+`Vector()` | Creates a zero vector.
+`Vector(Point)` | Creates a position vector.
+`Vector(Point start, Point end)` | Creates a vector with the start point `start` and the end point `end`.
+`Vector(Vector)` | Creates a vector by copying data from another vector.
 
-- ... first and last name (the floor is undefined, the numeric fields are `0`).
-- ... first name, last name and gender (numeric fields are `0`).
-- ... name, surname, gender, age, height and weight.
-- ... another person to copy the data.
+### Methods
 
-Add methods that return:
+Create the following methods:
 
-- Line with information about a person like:
+Signature | Return type | Description
+--------- |:-----------:| -----------
+`add(Vector)` | `Vector` | Returns the sum of the vector and another vector.
+`static` `add(Vector first, Vector second)` | `Vector` | Returns the sum of the vector `first` with the vector `second`.
+`copy()` | `Vector` | Returns a copy of the vector.
+`equals(Vector)` | `bool` | Returns the result of comparing the vector with another vector.
+`static` `equals(Vector first, Vector second)` | `bool` | Returns the result of comparing the vector `first` with the vector `second`.
+`getNorm()` | `float` | Returns the norm (length) of the vector.
+`mul(Vector)` | `float` | Returns the dot product of the vector and another vector.
+`static` `mul(Vector first, Vector second)` | `float` | Returns the dot product of the vector `first` with the vector `second`.
+`mul(float)` | `Vector` | Returns the product of the vector with a number.
+`static` `mul(Vector vector, float number)` | `Vector` | Returns the product of the vector `vector` with the number `number`.
+`sub(Vector)` | `Vector` | Returns the difference of the vector with another vector.
+`static` `sub(Vector first, Vector second)` | `Vector` | Returns the difference of the vector `first` with the vector `second`.
+`toString()` | `string` | Returns a string with the information about the coordinates of the vector*.
 
-  ```
-  John Smith, male, 31 y.o.
-  Height: 171,2 cm
-  Weight: 62,3 kg
-  ```
+Remarks:
+
+_* Example of a string:_
+
+```
+[(0.00; 0.00), (2.35; 4.26)]
+```
+
+## 1.3. The Human Type
+
+Tasks:
+
+1. Create the human type `Human`.
+2. Create the gender type `Gender` of a human nested in the human type.
+2. Define access modifiers for class members.
+3. Demonstrate work with the human type.
+
+### The Gender Type
+
+#### Fields
+
+Create the following fields:
+
+Name | Type* | Access | Description
+:---:|:-----:|:------:| -----------
+`MALE` | `const` `Gender` | `Read` | The value representing the male gender.
+`FEMALE` | `const` `Gender` | `Read` | The value representing the female gender.
+
+Remarks:
+
+_* If it's possible, create the gender type `Gender` as an
+[enumeration](https://en.wikipedia.org/wiki/Enumerated_type)._
+
+#### Methods
+
+Create the following methods:
+
+Signature | Return type | Description
+--------- |:-----------:| -----------
+`static` `toString(Gender)` | `string` | Returns a string representation of the gender type of a human.
+
+### The Human Type
+
+#### Fields
+
+Create the following fields:
+
+Name | Type* | Access | Description
+:---:|:-----:|:------:| -----------
+`name` | `string` | `Read` `Write` | The human's name.
+`surname` | `string` | `Read` `Write` | The human's surname.
+`gender` | `Gender` | `Read` `Write` | The human's gender.
+`age` | `int` | `Read` `Write` | The human's age in years.
+`height` | `float` | `Read` `Write` | The human's height in centimeters.
+`weight` | `float` | `Read` `Write` | The human's weight in kilograms.
+`format` | `const` `string` | - | A template for representing the human as a string.
+
+Remarks:
+
+_* All operations with fields available for reading and writing
+should occur only through class methods._
+
+#### Constructors
+
+Create the following constructors:
+
+Signature | Description
+--------- | -----------
+`Human(string name, string surname)` | Creates a human with the name `name` and the surname `surname` (gender is undefined, numeric fields are `0`).
+`Human(string name, string surname, Gender gender)` | Creates a human with the name `name`, the surname `surname` and the gender `gender` (numeric fields are `0`).
+`Human(string name, string surname, Gender gender, int age, float height, float weight)` | Creates a human with the name `name`, the surname `surname`, the gender `gender`, the age `age`, the height `height` and the weight `weight`.
+`Human(Human)` | Creates a human by copying data from another human.
+
+#### Methods
+
+Create the following methods:
+
+Signature | Return type | Description
+--------- |:-----------:| -----------
+`copy()` | `Human` | Returns a copy of the human.
+`equals(Human)` | `bool` | Returns the result of comparing the human with another human by name and surname.
+`static` `equals(Human first, Human second)` | `bool` | Returns the result of comparing the human `first` with the human `second` by first name and last name.
+`toString()` | `string` | Returns a string* with the information about the human**. 
   
-  Height and weight round up to one decimal place. Arrange the string 
-  pattern as a constant field.
-  
-- The result of comparing two people (Boolean value).
-Compare by name and surname.
+Remarks:
 
-- A copy of a human.
+_* Example of a string:_
 
-Duplicate the method of comparing two people as a static method.
-The use of overload operations is allowed.
+```
+John Smith, male, 31 y.o.
+Height: 171,2 cm
+Weight: 62,3 kg
+```
 
-Demonstrate working with the type of person.
+_** Round the height and the weight up to two digits after the point._
+
+::: warning Notice!
+The number of constructors for a class can be reduced by using
+**default arguments**.
+:::
