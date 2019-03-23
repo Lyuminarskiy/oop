@@ -5,17 +5,23 @@ next: /en/practice/
 
 # About this course
 
+This course provides materials on object-oriented programming (OOP).
+
+The author of the materials is _Vladislav Lyuminarskiy_.
+
+## Symbols
+
 In the course materials you will meet with the following information blocks:
 
 ::: tip Tip
-Supporting information for expanding horizons.
+Supporting information for expanding one's outlook.
 :::
 
-::: warning Warning!
+::: warning Notice!
 Assistance in solving a task or finding an answer to a question.
 :::
 
-::: danger Error!
+::: danger Common mistake!
 Possible mistakes to be avoided.
 :::
 
@@ -24,20 +30,18 @@ more successfully!
 
 ## Tools
 
-This course studies object-oriented programming (OOP).
-
-OOP itself is not tied to any particular programming language. We recommend 
-using `Java`, `C++` or `C#`. However, you can use any programming 
+OOP itself is not tied to any particular programming language.
+We recommend using `Java`, `C++` or `C#`. However, you can use any programming 
 language that supports the aspects of OOP required for practical tasks.
 
 ## Links
 
 The following links will help you to deepen your knowledge and explore those
- topics that were not covered in this course.
+topics that were not covered in this course.
 
-Studying proccess:
+Studying process:
 
-- [Gradebook
+- [The Gradebook
 ](https://docs.google.com/spreadsheets/d/1FUek1rsKd3NeZ7BYmQZXwD90FgJi6fjvVdFllTu-Vus/edit?usp=sharing).
 
 `C#` tutorials:
@@ -78,15 +82,19 @@ Studying proccess:
 
 ## Feedback
 
-For all questions arising during the course, you can get an answer by sending
-an email <a href='mailto:Vladislav.Lyuminarskiy@gmail.com
-?subject=OOP,%20group%20Б04-191-1,%20John%20Smith'
+For all questions arising during the course, you can get an answer
+in the comments on the pages of the site, or through social networks:
+
+- [VK](https://vk.me/vladislav.lyuminarskiy),
+- [Twitter](https://twitter.com/messages/compose?recipient_id=701145949972905984),
+- [Facebook Messenger](https://www.messenger.com/t/Vladislav.Lyuminarskiy),
+- [Telegram](https://t.me/Vladislav_Lyuminarskiy).
+
+You can also send a letter in the mail
+<a href='mailto:Vladislav.Lyuminarskiy@gmail.com
+?subject=OOP,%20group%20B04-191-1,%20John%20Smith'
 target='_blank'>Vladislav.Lyuminarskiy@gmail.com</a>.
-In the subject line indicate the name of the course and initials, for example:
+In the subject line, be sure to indicate the name of the course,
+group and your initials, for example:
 
-`OOP, group Б04-191-11, John Smith`
-
-::: danger Error!
-The answer is sent only for letters with the **correct letter subject**.
-All other letters will **remain unanswered**.
-:::
+`OOP, group B04-191-11, John Smith`
