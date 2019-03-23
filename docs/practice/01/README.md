@@ -142,15 +142,15 @@
 Сигнатура | Возвр. тип | Описание
 --------- |:----------:| --------
 `add(Vector)` | `Vector` | Возвращает сумму вектора и другого вектора.
-`static` `add(Vector first, Vector second)` | `Vector` | Возвращает сумму векторов `first` и `second`.
+`static` `add(Vector first, Vector second)` | `Vector` | Возвращает сумму вектора `first` с вектором `second`.
 `copy()` | `Vector` | Возвращает копию вектора.
 `equals(Vector)` | `bool` | Возвращает результат сравнения вектора с другим вектором.
 `static` `equals(Vector first, Vector second)` | `bool` | Возвращает результат сравнения вектора `first` с вектором `second`.
 `getNorm()` | `float` | Возвращает модуль (длину) вектора.
 `mul(Vector)` | `float` | Возвращает скалярное произведение вектора и другого вектора.
-`static` `mul(Vector first, Vector second)` | `float` | Возвращает скалярное произведение векторов `first` и `second`.
+`static` `mul(Vector first, Vector second)` | `float` | Возвращает скалярное произведение вектора `first` с вектором `second`.
 `mul(float)` | `Vector` | Возвращает произведение вектора с числом.
-`static` `mul(Vector vector, float number)` | `Vector` | Возвращает произевдение вектора `vector` с числом `number`.
+`static` `mul(Vector vector, float number)` | `Vector` | Возвращает произведение вектора `vector` с числом `number`.
 `sub(Vector)` | `Vector` | Возвращает разность вектора с другим вектором.
 `static` `sub(Vector first, Vector second)` | `Vector` | Возвращает разность вектора `first` с вектором `second`.
 `toString()` | `string` | Возвращает строку с информацией о координатах вектора*.
