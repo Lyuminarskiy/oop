@@ -75,7 +75,7 @@ next: /practice/
 комментариях на страницах сайта, либо через социальные сети:
 
 - [Вконтакте](https://vk.me/vladislav.lyuminarskiy),
-- [Twitter](https://twitter.com/messages/compose?recipient_id=701145949972905984),
+- [Твиттер](https://twitter.com/messages/compose?recipient_id=701145949972905984),
 - [Facebook Messenger](https://www.messenger.com/t/Vladislav.Lyuminarskiy),
 - [Telegram](https://t.me/Vladislav_Lyuminarskiy).
 
