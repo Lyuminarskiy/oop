@@ -143,16 +143,40 @@ module.exports = {
             link: "/en/practice/"
           },
           {
-            text: "Labs",
+            text: "Laboratory",
             link: "/en/labs/"
           }
         ],
         sidebar: {
           "/en/practice/": [
-            "01/"
+            "",
+            {
+              title: "Basics of OOP",
+              collapsable: false,
+              children: [
+                "01/",
+                "02/",
+                "03/"
+              ]
+            },
+            {
+              title: "Basics of software design",
+              collapsable: false,
+              children: [
+                "04/"
+              ]
+            }
           ],
           "/en/labs/": [
-            "01/"
+            "",
+            {
+              title: "Laboratory work",
+              collapsable: false,
+              children: [
+                "01/",
+                "02/"
+              ]
+            }
           ]
         }
       }

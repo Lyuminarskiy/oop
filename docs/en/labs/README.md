@@ -2,4 +2,4 @@
 prev: /en/practice/
 ---
 
-# Labs
+# Laboratory work

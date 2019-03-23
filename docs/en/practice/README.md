@@ -3,6 +3,6 @@ prev: /en/about/
 next: /en/labs/
 ---
 
-# Practice
+# Practice work
 
 ## Common information
