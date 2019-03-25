@@ -209,7 +209,7 @@ Signature | Return type | Description
 `prepend(T)` | - | Adds a new item with the specified value to the top of the list.
 `prepend(List<T>)`| - | Adds items from another list to the top of the list.
 `remove(int)` | - | Removes the list item with the specified index.
-`remove(int start, int end)` | - | Removes list items starting from the index `start` (inclusive) and ending on the index `end` (not inclusive).
+`remove(int start, int end)` | - | Removes list items starting from the index `start` (inclusive) and ending on the index `end` (exclusive).
 `reverse()` | - | Reverses the order of the list items.
 
 ::: warning Notice!
