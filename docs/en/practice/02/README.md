@@ -80,7 +80,7 @@ Weight: 62,3 kg
 
 ### The Worker Type
 
-#### Поля
+#### Fields
 
 Create the following fields:
 
@@ -99,7 +99,7 @@ Signature | Description
 
 #### Methods
 
-Create the following methods:, ID and job title.
+Create the following methods:
 
 Signature | Return type | Description
 --------- |:-----------:| -----------
@@ -126,96 +126,94 @@ Weight: 62,3 kg
 
 Tasks:
 
-1. Create a generic doubly linked list `List <T>`, where `T` is an arbitrary type.
-
-2. List items should be presented as a separate generalized
-type `Item <T>`, nested in the type of list.
-
+1. Create the doubly linked list generic type `List<T>`,
+where `T` is an arbitrary type.
+2. List items must be represented by the separate generic type `Item<T>`
+nested in a list type.
 3. Define access modifiers for class members.
-
 4. Demonstrate how to work with the list type.
 
-### Тип элемента списка
+### The List Item Type
 
-#### Поля
+#### Fields
 
-Создайте следующие поля:
+Create the following fields:
 
-Имя | Тип | Доступ | Описание
-:--:|:---:|:------:| --------
-`value` | `T` | `Чтение` `Запись` | Значение, хранимое в элементе списка.
-`prev` | `Item<T>` | `Чтение` `Запись` | Ссылка на предыдущий элемент списка.
-`next` | `Item<T>` | `Чтение` `Запись` | Ссылка на последующий элемент списка.
+Name | Type | Access | Description
+:---:|:----:|:------:| -----------
+`value` | `T` | `Read` `Write` | The value stored in the list item.
+`prev` | `Item<T>` | `Read` `Write` | Reference to the previous list item.
+`next` | `Item<T>` | `Read` `Write` | Reference to the next list item.
 
-Заметьте, что у первого элемента списка нет предудыщего элемента,
-а у последего элемента - последующего.
+Notice that the first list item does not have a previous item,
+and the last item has no follow item.
 
-#### Конструкторы
+#### Constructors
 
-Создайте следующие конструкторы:
+Create the following constructors:
 
-Сигнатура | Описание
---------- | --------
-`Item(T)` | Создаёт элемент и сохраняет в нём указанное значение.
-`Item(T value, Item<T> prev, Item<T> next)` | Создаёт элемент и сохраняет в нём значение `value`, а также ссылки на предыдущий `prex` и последующий `next` элементы списка.
-`Item(Item<T>)` | Создаёт элемент, копируя данные из другого элемента.
+Signature | Description
+--------- | -----------
+`Item(T)` | Creates an item and stores the specified value in it.
+`Item(T value, Item<T> prev, Item<T> next)` | Creates an item and stores in it the value `value`, as well as references to the previous `prev` and the next `next` list items.
+`Item(Item<T>)` | Creates an item by copying data from another item.
 
-#### Методы
+#### Methods
 
-Создайте следующие методы:
+Create the following methods:
 
-Сигнатура | Возвр. тип | Описание
---------- |:----------:| --------
-`equals(Item<T>)` | `bool` | Возвращает результат сравнения элемента с другим элементом по значению.
-`static` `equals(Item<T> first, Item<T> second)` | `bool` | Возвращает результат сравнения элемента `first` с элементом `second` по значению.
+Signature | Return type | Description
+--------- |:-----------:| -----------
+`equals(Item<T>)` | `bool` | Returns the result of comparing the item with another item by value.
+`static` `equals(Item<T> first, Item<T> second)` | `bool` | Returns the result of comparing the item `first` with the item `second` by value.
 
-### Тип двусвязного списка
+### The Doubly Linked List Type
 
-#### Поля
+#### Fields
 
-Создайте следующие поля:
+Create the following fields:
 
-Имя | Тип | Доступ | Описание
-:--:|:---:|:------:| --------
-`head` | `Item<T>` | - | Ссылка на первый элемент списка.
-`tail` | `Item<T>` | - | Ссылка на предыдущий элемент списка.
-`size` | `int` | `Чтение` | Количество элементов в списке.
+Name | Type | Access | Description
+:---:|:----:|:------:| -----------
+`head` | `Item<T>` | - | Reference to the first list item.
+`tail` | `Item<T>` | - | Reference to the last list item.
+`size` | `int` | `Чтение` | The number of the list items.
 
-#### Конструкторы
+#### Constructors
 
-Создайте следующие конструкторы:
+Create the following constructors:
 
-Сигнатура | Описание
---------- | --------
-`List()` | Создаёт пустой список.
-`List(List<T>)` | Создаёт список, копируя данные из другого списка.
+Signature | Description
+--------- | -----------
+`List()` | Creates an empty list.
+`List(List<T>)` | Creates a list by copying data from another list.
 
-#### Методы
+#### Methods
 
-Создайте следующие методы:
+Create the following methods:
 
-Сигнатура | Возвр. тип | Описание
---------- |:----------:| --------
-`append(T)`| - | Добавляет новый элемент в конец списка.
-`append(List<T>)`| - | Добавляет элементы из другого списка в конец списка.
-`clear()` | - | Удаляет все элементы из списка.
-`contains(T)` | `bool` | Возвращает результат проверки того, что указанное значение есть в списке.
-`copy()` | `List<T>` | Возвращает копию списка.
-`equals(List<T>)` | `bool` | Возвращает результат поэлементного сравнения списка с другим списком.
-`static` `equals(List<T> first, List<T> second)` | `bool` | Возвращает результат поэлементного сравнения `first` со списком `second`.
-`getItem(int)` | `T` | Возвращает значение, хранящееся в элементе списка с указанным индексом.
-`indexOf(T value, int index)` | `int` | Возвращает индекс первого найденного вхождения значения `value` в пределах всего списка, начиная с указанного индекса `index`.
-`insert(T value, int index)` | - | Добавляет новый элемент со значением `value` в список по индексу `index`.
-`insert(List<T> list, int index)` | - | Добавляет элементы из другого списка `list` в список, начиная с индекса `index`.
-`lastIndexOf(T value, int index)` | `int` | Возвращает индекс последнего найденного вхождения значения `value` в пределах всего списка, начиная с указанного индекса `index`.
-`prepend(T)` | - | Добавляет новый элемент в начало списка.
-`prepend(List<T>)`| - | Добавляет элементы из другого списка в начало списка.
-`remove(int)` | - | Удаляет элемент списка с указанным индексом.
-`remove(int start, int end)` | - | Удаляет элементы списка в указанном диапазоне.
-`reverse()` | - | Обращает порядок элементов в списке.
+Signature | Return type | Description
+--------- |:-----------:| -----------
+`append(T)`| - | Adds a new item with the specified value to the end of the list.
+`append(List<T>)`| - | Adds items from another list to the end of the list.
+`clear()` | - | Removes all items from the list.
+`contains(T)` | `bool` | Returns the result of checking that the specified value is in the list.
+`copy()` | `List<T>` | Returns a copy of the list.
+`equals(List<T>)` | `bool` | Returns the result of the elementwise comparison of the list with another list.
+`static` `equals(List<T> first, List<T> second)` | `bool` | Returns the result of the elementwise comparison of the list `first` with the list `second`.
+`getItem(int)` | `T` | Returns the value stored in the list item with the specified index.
+`indexOf(T value, int index)` | `int` | Returns the index of the first found occurrence of the value `value` within the entire list, starting at the index `index`.
+`insert(T value, int index)` | - | Adds a new item with the value `value` to the list at the index` index`.
+`insert(List<T> list, int index)` | - | Adds items from another list `list` to the list, starting at the index `index`.
+`lastIndexOf(T value, int index)` | `int` | Returns the index of the last found occurrence of the value `value` within the entire list, starting at the index `index`.
+`prepend(T)` | - | Adds a new item with the specified value to the top of the list.
+`prepend(List<T>)`| - | Adds items from another list to the top of the list.
+`remove(int)` | - | Removes the list item with the specified index.
+`remove(int start, int end)` | - | Removes list items starting from the index `start` (inclusive) and ending on the index `end` (not inclusive).
+`reverse()` | - | Reverses the order of the list items.
 
-::: warning Обратите внимание!
-При удалении списка должны удаляться и его элементы. Если вы используете
-язык с ручным управлением памятью (например, `C++`), то создайте
-**деструктор класса**.
+::: warning Notice!
+When deleting a list, its items should also be deleted.
+If you are using a language with manual memory management (for example, `C++`),
+then create a **class destructor**.
 :::
