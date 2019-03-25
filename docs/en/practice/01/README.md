@@ -5,7 +5,7 @@
 - Basic concepts of OOP.
 - Encapsulation.
 - Classes, fields and methods.
-- `public` and` private` access modifiers.
+- `public` and `private` access modifiers.
 - Constructors and Objects creation.
 - Static class members and constants.
 - Nested types.
@@ -43,7 +43,7 @@ Tasks:
 
 1. Create the point type `Point`.
 2. Define access modifiers for class members.
-3. Demonstrate how to work with a point type.
+3. Demonstrate how to work with the point type.
 
 ### Fields
 
@@ -108,7 +108,7 @@ Tasks:
 
 1. Create the vector type `Vector`.
 2. Define access modifiers for class members.
-3. Demonstrate how to work with a vector type.
+3. Demonstrate how to work with the vector type.
 
 ### Fields
 
@@ -153,7 +153,7 @@ Signature | Return type | Description
 `static` `mul(Vector vector, float number)` | `Vector` | Returns the product of the vector `vector` with the number `number`.
 `sub(Vector)` | `Vector` | Returns the difference of the vector with another vector.
 `static` `sub(Vector first, Vector second)` | `Vector` | Returns the difference of the vector `first` with the vector `second`.
-`toString()` | `string` | Returns a string with the information about the coordinates of the vector*.
+`toString()` | `string` | Returns a string* with the information about the coordinates of the vector.
 
 Remarks:
 
@@ -169,8 +169,8 @@ Tasks:
 
 1. Create the human type `Human`.
 2. Create the gender type `Gender` of a human nested in the human type.
-2. Define access modifiers for class members.
-3. Demonstrate work with the human type.
+3. Define access modifiers for class members.
+4. Demonstrate how to work with the human type.
 
 ### The Gender Type
 
@@ -236,7 +236,7 @@ Signature | Return type | Description
 --------- |:-----------:| -----------
 `copy()` | `Human` | Returns a copy of the human.
 `equals(Human)` | `bool` | Returns the result of comparing the human with another human by name and surname.
-`static` `equals(Human first, Human second)` | `bool` | Returns the result of comparing the human `first` with the human `second` by first name and last name.
+`static` `equals(Human first, Human second)` | `bool` | Returns the result of comparing the human `first` with the human `second` by name and surname.
 `toString()` | `string` | Returns a string* with the information about the human**. 
   
 Remarks:
