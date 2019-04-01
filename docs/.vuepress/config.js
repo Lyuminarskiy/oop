@@ -86,14 +86,14 @@ module.exports = {
               collapsable: false,
               children: [
                 "01/",
-                "02/",
-                "03/"
+                "02/"
               ]
             },
             {
               title: "Основы проектирования ПО",
               collapsable: false,
               children: [
+                "03/",
                 "04/"
               ]
             }
@@ -155,14 +155,14 @@ module.exports = {
               collapsable: false,
               children: [
                 "01/",
-                "02/",
-                "03/"
+                "02/"
               ]
             },
             {
               title: "Basics of software design",
               collapsable: false,
               children: [
+                "03/",
                 "04/"
               ]
             }
