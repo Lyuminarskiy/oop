@@ -9,7 +9,7 @@
 
 ## Theoretical Information
 
-The `protected` access modifier defines _protected_ members of a class 
+The `protected` access modifier defines _protected_ members of a class
 that can be used by the class that defined them and any child class.
 
 ## 2.1. Inheritance and Polymorphism
@@ -31,8 +31,8 @@ following function:
     Signature | Return type | Description
     --------- |:-----------:| -----------
     `display(Human[])` | - | Displays information about all the humans in the array.
-    
-    Demonstrate how to work with this function by passing it an array filled 
+
+    Demonstrate how to work with this function by passing it an array filled
     with instances of the human type and it's children. For instances of
     different types, different information should be displayed.
 
@@ -62,11 +62,11 @@ Create the following methods:
 
 Signature | Return type | Description
 --------- |:-----------:| -----------
-`override` `copy()` | `Citizen` | Returns a copy of the citizen.
+`copy()` | `Citizen` | Returns a copy of the citizen.
 `equals(Citizen)` | `bool` | Returns the result of comparing the citizen with another citizen by name, surname and ID.
 `static` `equals(Citizen first, Citizen second)` | `bool` | Returns the result of comparing the citizen `first` with the citizen `second` by name, surname and ID.
 `override` `toString()` | `string` | Returns a string* with the information about the citizen.
-  
+
 Remarks:
 
 _* Example of a string:_
@@ -103,11 +103,11 @@ Create the following methods:
 
 Signature | Return type | Description
 --------- |:-----------:| -----------
-`override` `copy()` | `Worker` | Returns a copy of the worker.
+`copy()` | `Worker` | Returns a copy of the worker.
 `equals(Worker)` | `bool` | Returns the result of comparing the worker with another worker by name, surname, ID and job title.
 `static` `equals(Worker first, Worker second)` | `bool` | Returns the result of comparing the worker `first` with the worker `second` by name, surname, ID and job title.
 `override` `toString()` | `string` | Returns a string* with the information about the worker.
-  
+
 Remarks:
 
 _* Example of a string:_
