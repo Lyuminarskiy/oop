@@ -10,12 +10,13 @@ namespace University
     /// <summary>
     /// Группы преподавателя.
     /// </summary>
-    public List<Group> Groups { get; set; } = new List<Group>();
+    public IList<Group> Groups { get; set; } = new List<Group>();
 
     /// <summary>
     /// Создаёт экземпляр класса <see cref="Teacher"/>.
     /// </summary>
     /// <param name="name">Имя преподавателя.</param>
-    public Teacher(string name) : base(name) { }
+    /// <param name="gender">Пол преподавателя.</param>
+    public Teacher(string name, Gender gender) : base(name, gender) { }
   }
 }

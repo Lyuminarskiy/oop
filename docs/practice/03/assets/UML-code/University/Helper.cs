@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace University
 {
@@ -10,7 +11,11 @@ namespace University
     public static void ShowTeacherInfo(Teacher teacher)
     {
       Console.WriteLine(teacher.Name);
-      teacher.Groups.ForEach(group => group.Display());
+
+      foreach (var group in teacher.Groups)
+      {
+        group.Display();
+      }
     }
   }
 }

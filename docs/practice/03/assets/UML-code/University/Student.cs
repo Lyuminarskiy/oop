@@ -14,6 +14,7 @@
     /// Создаёт экземпляр класса <see cref="Student"/>.
     /// </summary>
     /// <param name="name">Имя студента.</param>
-    public Student(string name) : base(name) { }
+    /// <param name="gender">Пол студента.</param>
+    public Student(string name, Gender gender) : base(name, gender) { }
   }
 }

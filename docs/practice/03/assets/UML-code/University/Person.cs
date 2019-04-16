@@ -7,8 +7,10 @@ namespace University
   /// </summary>
   public abstract class Person : IDisplayable
   {
-
-    public Gender? Gender;
+    /// <summary>
+    /// Пол личности.
+    /// </summary>
+    public Gender Gender;
 
     /// <summary>
     /// Имя личности.
@@ -25,9 +27,11 @@ namespace University
     /// Создаёт экземпляр класса <see cref="Person"/>.
     /// </summary>
     /// <param name="name">Имя личности.</param>
-    protected Person(string name)
+    /// <param name="gender">Пол личности.</param>
+    protected Person(string name, Gender gender)
     {
       Name = name;
+      Gender = gender;
     }
   }
 }
