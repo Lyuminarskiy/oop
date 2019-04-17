@@ -1,4 +1,5 @@
 module.exports = {
+  ga: "UA-138493396-3",
   evergreen: true,
   serviceWorker: true,
   head: [
