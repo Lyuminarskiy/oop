@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5ADF02FE-D949-41B0-B921-EC66A6FA89CF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>solid</RootNamespace>
-    <AssemblyName>solid</AssemblyName>
+    <RootNamespace>SOLID</RootNamespace>
+    <AssemblyName>SOLID</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,10 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DIP\DIP.cs" />
+    <Compile Include="ISP\ISP.cs" />
+    <Compile Include="LSP\LSP.cs" />
+    <Compile Include="OCP\OCP.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="srp\srp1_after.cs" />
-    <Compile Include="srp\srp1_before.cs" />
+    <Compile Include="SRP\SRP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
