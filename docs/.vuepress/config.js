@@ -87,15 +87,18 @@ module.exports = {
               collapsable: false,
               children: [
                 "01/",
-                "02/"
+                "02/",
+                "03/"
               ]
             },
             {
               title: "Основы проектирования ПО",
               collapsable: false,
               children: [
-                "03/",
-                "04/"
+                "04/",
+                "05/",
+                "06/",
+                "07/"
               ]
             }
           ],
