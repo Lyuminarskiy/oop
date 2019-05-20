@@ -1,8 +1,9 @@
 .vscode
 
-.vs
+**/.vs
 **/bin
 **/obj
+*.sln.DotSettings.user
 
 .idea/**
 !.idea/OOP-course.iml
