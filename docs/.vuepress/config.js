@@ -71,12 +71,17 @@ module.exports = {
             link: "/about/"
           },
           {
-            text: "Практика",
-            link: "/practice/"
-          },
-          {
-            text: "Лабораторные",
-            link: "/labs/"
+            text: "Учебный процесс",
+            items: [
+              {
+                text: "Практические занятия",
+                link: "/practice/"
+              },
+              {
+                text: "Лабораторные работы",
+                link: "/labs/"
+              }
+            ]
           }
         ],
         sidebar: {
@@ -143,12 +148,17 @@ module.exports = {
             link: "/en/about/"
           },
           {
-            text: "Practice",
-            link: "/en/practice/"
-          },
-          {
-            text: "Laboratory",
-            link: "/en/labs/"
+            text: "Educational process",
+            items: [
+              {
+                text: "Practice lessons",
+                link: "/en/practice/"
+              },
+              {
+                text: "Laboratory work",
+                link: "/en/labs/"
+              }
+            ]
           }
         ],
         sidebar: {
