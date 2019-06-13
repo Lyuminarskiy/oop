@@ -1,9 +1,26 @@
 {
+  "license": "MIT",
+  "version": "2.0.0",
+  "description": "Учебные материалы по курсу \"Объектно-ориентированное программирование\".",
+  "homepage": "https://oop-course.github.io",
+  "author": {
+    "name": "Люминарский Владислав",
+    "email": "Vladislav.Lyuminarskiy@gmail.com",
+    "url": "https://github.com/Vladislav-Lyuminarskiy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OOP-course/OOP-course.git"
+  },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "^0.14.11"
+    "@vuepress/plugin-back-to-top": "^1.0.1",
+    "@vuepress/plugin-google-analytics": "^1.0.1",
+    "@vuepress/plugin-medium-zoom": "^1.0.1",
+    "@vuepress/plugin-pwa": "^1.0.1",
+    "vuepress": "^1.0.1"
   }
 }

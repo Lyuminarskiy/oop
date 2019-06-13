@@ -3,8 +3,9 @@
   "name": "Объектно-ориентированное программирование",
   "short_name": "ООП",
   "description": "Учебные материалы по курсу \"Объектно-ориентированное программирование\".",
-  "theme_color": "#3eaf7c",
-  "background_color": "#3eaf7c",
+  "start_url": "/",
+  "theme_color": "black",
+  "background_color": "white",
   "display": "standalone",
   "orientation": "any",
   "icons": [{

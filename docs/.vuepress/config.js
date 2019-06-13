@@ -1,7 +1,29 @@
 module.exports = {
-  ga: "UA-138493396-3",
   evergreen: true,
-  serviceWorker: true,
+  plugins: {
+    "@vuepress/back-to-top": {},
+    "@vuepress/google-analytics": {
+      ga: "UA-138493396-3"
+    },
+    "@vuepress/medium-zoom": {
+      selector: ".theme-default-content img",
+      options: {
+        scrollOffset: 0
+      }
+    },
+    "@vuepress/pwa": {
+      updatePopup: {
+        "/": {
+          message: "Доступно новое содержимое.",
+          buttonText: "Обновить"
+        },
+        "/en/": {
+          message: "New content is available.",
+          buttonText: "Refresh"
+        }
+      }
+    }
+  },
   head: [
     ["meta", {
       name: "author",
@@ -9,7 +31,7 @@ module.exports = {
     }],
     ["meta", {
       name: "theme-color",
-      content: "#3eaf7c"
+      content: "black"
     }],
     ["link", {
       rel: "icon",
@@ -49,12 +71,6 @@ module.exports = {
         label: "Русский",
         lastUpdated: "Последнее обновление",
         editLinkText: "Редактировать эту страницу",
-        serviceWorker: {
-          updatePopup: {
-            message: "Доступно новое содержимое.",
-            buttonText: "Обновить"
-          }
-        },
         algolia: {
           apiKey: "892ad28dc056e1eb225c126678ef1c09",
           indexName: "c_vladislav",
@@ -126,12 +142,6 @@ module.exports = {
         label: "English",
         lastUpdated: "Last updated",
         editLinkText: "Edit this page",
-        serviceWorker: {
-          updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          }
-        },
         algolia: {
           apiKey: "892ad28dc056e1eb225c126678ef1c09",
           indexName: "c_vladislav",

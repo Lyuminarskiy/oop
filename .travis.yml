@@ -17,10 +17,12 @@ jobs:
         - mv README.md LICENSE docs/.vuepress/dist --verbose
       deploy:
         skip-cleanup: true
+        verbose: true
         provider: pages
         github-token: $GITHUB_TOKEN
         repo: OOP-course/oop-course.github.io
         target-branch: master
+        committer_from_gh: true
         local-dir: docs/.vuepress/dist
         on:
           branch: master
